@@ -1,0 +1,7 @@
+C:\Users\uczen\source\repos\Singleton - creative pattern\bin\Debug\Singleton - creative pattern.exe.config
+C:\Users\uczen\source\repos\Singleton - creative pattern\bin\Debug\Singleton - creative pattern.exe
+C:\Users\uczen\source\repos\Singleton - creative pattern\bin\Debug\Singleton - creative pattern.pdb
+C:\Users\uczen\source\repos\Singleton - creative pattern\obj\Debug\Singleton - creative pattern.csproj.AssemblyReference.cache
+C:\Users\uczen\source\repos\Singleton - creative pattern\obj\Debug\Singleton - creative pattern.csproj.CoreCompileInputs.cache
+C:\Users\uczen\source\repos\Singleton - creative pattern\obj\Debug\Singleton - creative pattern.exe
+C:\Users\uczen\source\repos\Singleton - creative pattern\obj\Debug\Singleton - creative pattern.pdb
