@@ -1,0 +1,8 @@
+C:\Users\uczen\source\repos\Builder - creative pattern\bin\Debug\Builder - creative pattern.exe.config
+C:\Users\uczen\source\repos\Builder - creative pattern\bin\Debug\Builder - creative pattern.exe
+C:\Users\uczen\source\repos\Builder - creative pattern\bin\Debug\Builder - creative pattern.pdb
+C:\Users\uczen\source\repos\Builder - creative pattern\obj\Debug\Builder - creative pattern.csproj.AssemblyReference.cache
+C:\Users\uczen\source\repos\Builder - creative pattern\obj\Debug\Builder - creative pattern.csproj.CoreCompileInputs.cache
+C:\Users\uczen\source\repos\Builder - creative pattern\obj\Debug\Builder - creative pattern.exe
+C:\Users\uczen\source\repos\Builder - creative pattern\obj\Debug\Builder - creative pattern.pdb
+C:\Users\uczen\source\repos\Builder - creative pattern\obj\Debug\Builder - creative pattern.exe.config
