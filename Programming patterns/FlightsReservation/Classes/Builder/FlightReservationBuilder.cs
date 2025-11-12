@@ -1,22 +1,22 @@
 namespace ReservationSystem
 {
-    public class ReservationBuilder
+    public class FlightReservationBuilder
     {
         private Reservation reservation = new Reservation();
 
-        public ReservationBuilder SetName(string name)
+        public FlightReservationBuilder SetName(string name)
         {
             reservation.Name = name;
             return this;
         }
 
-        public ReservationBuilder SetDate(string date)
+        public FlightReservationBuilder SetDate(string date)
         {
             reservation.Date = date;
             return this;
         }
 
-        public ReservationBuilder SetLocation(string location)
+        public FlightReservationBuilder SetLocation(string location)
         {
             reservation.Location = location;
             return this;
