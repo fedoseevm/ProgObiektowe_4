@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\builder\\flightreservationbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\builder\\flightreservationbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\models\\flightreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\models\\flightreservation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\builder\\ireservationbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\builder\\ireservationbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\factory\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\factory\\ireservationservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\builder\\reservationdirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\builder\\reservationdirector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|c:\\my storage\\github repos\\progobiektowe_4\\programming patterns\\flightsreservation\\classes\\auth\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\classes\\auth\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|solutionrelative:classes\\auth\\loginmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Template\\FlightReservationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Template\\FlightReservationService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{E5EFA8D6-2DF0-4153-8721-17060B02D8D8}|FlightsReservation.csproj|C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,114 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FlightReservation.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Models\\FlightReservation.cs",
-              "RelativeDocumentMoniker": "Classes\\Models\\FlightReservation.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Models\\FlightReservation.cs",
-              "RelativeToolTip": "Classes\\Models\\FlightReservation.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:07:34.466Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "FlightReservationBuilder.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\FlightReservationBuilder.cs",
-              "RelativeDocumentMoniker": "Classes\\Builder\\FlightReservationBuilder.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\FlightReservationBuilder.cs",
-              "RelativeToolTip": "Classes\\Builder\\FlightReservationBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T18:05:43.03Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "User.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Models\\User.cs",
-              "RelativeDocumentMoniker": "Classes\\Models\\User.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Models\\User.cs",
-              "RelativeToolTip": "Classes\\Models\\User.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T17:29:18.306Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReservationDirector.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\ReservationDirector.cs",
-              "RelativeDocumentMoniker": "Classes\\Builder\\ReservationDirector.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\ReservationDirector.cs",
-              "RelativeToolTip": "Classes\\Builder\\ReservationDirector.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T17:28:11.916Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "IReservationBuilder.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\IReservationBuilder.cs",
-              "RelativeDocumentMoniker": "Classes\\Builder\\IReservationBuilder.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Builder\\IReservationBuilder.cs",
-              "RelativeToolTip": "Classes\\Builder\\IReservationBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-12T17:27:34.744Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "FlightReservationService.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Template\\FlightReservationService.cs",
-              "RelativeDocumentMoniker": "Template\\FlightReservationService.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Template\\FlightReservationService.cs",
-              "RelativeToolTip": "Template\\FlightReservationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:51:31.69Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "IReservationService.cs",
-              "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Factory\\IReservationService.cs",
-              "RelativeDocumentMoniker": "Classes\\Factory\\IReservationService.cs",
-              "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Factory\\IReservationService.cs",
-              "RelativeToolTip": "Classes\\Factory\\IReservationService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:51:22.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "LoginManager.cs",
               "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Auth\\LoginManager.cs",
               "RelativeDocumentMoniker": "Classes\\Auth\\LoginManager.cs",
               "ToolTip": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Classes\\Auth\\LoginManager.cs",
               "RelativeToolTip": "Classes\\Auth\\LoginManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-06T01:56:10.508Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\My Storage\\Github repos\\ProgObiektowe_4\\Programming patterns\\FlightsReservation\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -161,7 +43,8 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-06T01:40:38.629Z"
+              "WhenOpened": "2025-11-06T01:40:38.629Z",
+              "EditorCaption": ""
             }
           ]
         }
