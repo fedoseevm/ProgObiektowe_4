@@ -9,11 +9,11 @@ namespace ReservationSystem
             switch (type.ToLower())
             {
                 case "hotel":
-                    return new HotelReservationService();
+                    //return new HotelReservationService();
                 case "flight":
-                    return new FlightReservationService();
+                    //return new FlightReservationService();
                 case "doctor":
-                    return new DoctorAppointmentService();
+                    //return new DoctorAppointmentService();
                 default:
                     throw new ArgumentException("Nieznany typ rezerwacji.");
             }
