@@ -1,3 +1,4 @@
+using FlightsReservation.Classes.Factory;
 using System;
 
 namespace ReservationSystem
@@ -8,12 +9,10 @@ namespace ReservationSystem
         {
             switch (type.ToLower())
             {
-                case "hotel":
-                    //return new HotelReservationService();
-                case "flight":
-                    //return new FlightReservationService();
-                case "doctor":
-                    //return new DoctorAppointmentService();
+                case "domesticFlight":
+                    return new DomesticFlightReservationService();
+                case "internationalFlight":
+                    return new InternationalFlightReservationService();
                 default:
                     throw new ArgumentException("Nieznany typ rezerwacji.");
             }
