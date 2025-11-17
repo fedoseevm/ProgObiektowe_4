@@ -1,5 +1,6 @@
 ﻿using FlightsReservation.classes;
 using Google.Cloud.Firestore;
+using ReservationSystem;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -61,6 +62,10 @@ namespace FlightsReservation
             if (success)
             {
                 Console.WriteLine($"\nZalogowano pomyślnie! Witaj, {loginManager.CurrentUser.Username}.");
+
+
+                IReservationService reservationService = ReservationFactory.Create("domesticFlight");
+                reservationService.MakeReservation();
             }
             else
             {
