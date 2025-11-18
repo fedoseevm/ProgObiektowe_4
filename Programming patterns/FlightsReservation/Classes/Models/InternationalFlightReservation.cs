@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace FlightsReservation.Classes.Models
 {
-    internal class InternationalFlightReservation
+    internal class InternationalFlightReservation : FlightReservation
     {
+        public string PassportNumber { get; set; }
+        public bool IsVisaRequired { get; set; }
     }
 }
