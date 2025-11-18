@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace FlightsReservation.Classes.Models
 {
-    internal class DomesticFlightReservation
+    internal class DomesticFlightReservation : FlightReservation
     {
+
     }
 }
