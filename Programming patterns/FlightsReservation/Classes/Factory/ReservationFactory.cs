@@ -9,9 +9,9 @@ namespace ReservationSystem
         {
             switch (type.ToLower())
             {
-                case "domesticFlight":
+                case "domesticflight":
                     return new DomesticFlightReservationService();
-                case "internationalFlight":
+                case "internationalflight":
                     return new InternationalFlightReservationService();
                 default:
                     throw new ArgumentException("Nieznany typ rezerwacji.");
