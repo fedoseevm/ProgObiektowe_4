@@ -1,4 +1,7 @@
 ﻿using FlightsReservation.classes;
+using FlightsReservation.Classes.Builder;
+using FlightsReservation.Classes.Factory;
+using FlightsReservation.Classes.Models;
 using Google.Cloud.Firestore;
 using ReservationSystem;
 using System;
@@ -62,18 +65,15 @@ namespace FlightsReservation
             if (success)
             {
                 Console.WriteLine($"\nZalogowano pomyślnie! Witaj, {loginManager.CurrentUser.Username}.");
-
-
-                IReservationService reservationService = ReservationFactory.Create("domesticFlight");
-                reservationService.MakeReservation();
+                
+                await UserMenu(loginManager);
             }
             else
             {
                 Console.WriteLine("\nBłąd logowania — nieprawidłowy login lub hasło.");
+                Console.WriteLine("\nNaciśnij Enter, aby wrócić do menu...");
+                Console.ReadLine();
             }
-
-            Console.WriteLine("\nNaciśnij Enter, aby wrócić do menu...");
-            Console.ReadLine();
         }
 
         private static async Task UserRegister()
@@ -87,21 +87,19 @@ namespace FlightsReservation
             Console.Write("Wybierz hasło: ");
             string password = Console.ReadLine();
 
-            // Połączenie z Firestore
+            // Firestore
             FirestoreDb db = LoginManager.GetInstance().DbConnect();
 
-            // Sprawdzenie, czy użytkownik już istnieje
             CollectionReference usersRef = db.Collection("users");
             Query query = usersRef.WhereEqualTo("username", username);
-            QuerySnapshot result = await query.GetSnapshotAsync();
+            QuerySnapshot queryResult = await query.GetSnapshotAsync();
 
-            if (result.Documents.Count > 0)
+            if (queryResult.Documents.Count > 0)
             {
                 Console.WriteLine("\nUżytkownik o tej nazwie już istnieje.");
             }
             else
             {
-                // Dodanie nowego użytkownika
                 var newUser = new 
                 { 
                     username = username, 
@@ -110,6 +108,153 @@ namespace FlightsReservation
 
                 await usersRef.AddAsync(newUser);
                 Console.WriteLine("\nRejestracja zakończona pomyślnie!");
+            }
+
+            Console.WriteLine("\nNaciśnij Enter, aby wrócić do menu...");
+            Console.ReadLine();
+        }
+
+        private static async Task UserMenu(LoginManager loginManager)
+        {
+            FirestoreDb db = loginManager.DbConnect();
+
+            while (true)
+            {
+                Console.Clear();
+                Console.WriteLine($"=== MENU UŻYTKOWNIKA ({loginManager.CurrentUser.Username}) ===");
+                Console.WriteLine("1. Stwórz rezerwację");
+                Console.WriteLine("2. Zobacz moje rezerwacje");
+                Console.WriteLine("3. Wyloguj się");
+                Console.Write("\nWybierz opcję: ");
+
+                string choice = Console.ReadLine();
+
+                switch (choice)
+                {
+                    case "1":
+                        await CreateReservation(loginManager, db);
+                        break;
+
+                    case "2":
+                        await ShowUserReservations(loginManager, db);
+                        break;
+
+                    case "3":
+                        Console.WriteLine("Wylogowywanie...");
+                        return;
+
+                    default:
+                        Console.WriteLine("Nieprawidłowa opcja. Naciśnij Enter, aby spróbować ponownie.");
+                        Console.ReadLine();
+                        break;
+                }
+            }
+        }
+
+        private static async Task CreateReservation(LoginManager loginManager, FirestoreDb db)
+        {
+            Console.Clear();
+            Console.WriteLine("=== TWORZENIE REZERWACJI ===");
+
+            Console.WriteLine("Wybierz typ lotu:");
+            Console.WriteLine("1. Krajowy");
+            Console.WriteLine("2. Międzynarodowy");
+            Console.Write("\nWybierz opcję: ");
+            string flightReservationType = Console.ReadLine();
+
+            IReservationService reservationService;
+
+            switch (flightReservationType)
+            {
+                case "1":
+                    reservationService = new DomesticFlightReservationService();
+                    break;
+                case "2":
+                    reservationService = new InternationalFlightReservationService();
+                    break;
+                default:
+                    Console.WriteLine("Nieprawidłowa opcja. Naciśnij Enter...");
+                    Console.ReadLine();
+                    return;
+            }
+
+            FlightReservation reservation = reservationService.MakeReservation();
+
+            // Firestore
+            string docId = $"flight_{reservation.FlightNumber}";
+            DocumentReference flightDocRef = db.Collection("users")
+                                               .Document(loginManager.CurrentUser.Username)
+                                               .Collection("flights")
+                                               .Document(docId);
+            Dictionary<string, object> flightData = new Dictionary<string, object>
+            {
+                { "FlightNumber", reservation.FlightNumber },
+                { "From", reservation.From },
+                { "To", reservation.To },
+                { "DepartureDate", reservation.DepartureDate.ToUniversalTime() },
+                { "ArrivalDate", reservation.ArrivalDate.ToUniversalTime() },
+                { "Price", reservation.Price },
+                { "IsInternational", reservation.IsInternational }
+            };
+
+            // If International flight
+            if (reservation.IsInternational)
+            {
+                flightData["PassportNumber"] = reservation.PassportNumber;
+                flightData["IsVisaRequired"] = reservation.IsVisaRequired;
+            }
+
+            await flightDocRef.SetAsync(flightData);
+            Console.WriteLine("\nRezerwacja została zapisana pomyślnie!");
+
+            Console.WriteLine("\nNaciśnij Enter, aby wrócić do menu...");
+            Console.ReadLine();
+        }
+
+        private static async Task ShowUserReservations(LoginManager loginManager, FirestoreDb db)
+        {
+            Console.Clear();
+            Console.WriteLine("=== TWOJE REZERWACJE ===\n");
+
+            // Firestore
+            CollectionReference flightsRef = db.Collection("users")
+                                               .Document(loginManager.CurrentUser.Username)
+                                               .Collection("flights");
+
+            QuerySnapshot queryResult = await flightsRef.GetSnapshotAsync();
+
+            if (queryResult.Documents.Count == 0)
+            {
+                Console.WriteLine("Nie masz jeszcze żadnych rezerwacji.");
+            }
+            else
+            {
+                foreach (var document in queryResult.Documents)
+                {
+                    var data = document.ToDictionary();
+
+                    string flightNumber = data["FlightNumber"].ToString();
+                    string from = data["From"].ToString();
+                    string to = data["To"].ToString();
+
+                    DateTime departureDate = ((Timestamp)data["DepartureDate"]).ToDateTime().ToLocalTime();
+
+                    DateTime arrivalDate = ((Timestamp)data["ArrivalDate"]).ToDateTime().ToLocalTime();
+
+                    double price = Convert.ToDouble(data["Price"]);
+                    bool isInternational = Convert.ToBoolean(data["IsInternational"]);
+
+                    Console.WriteLine($"Lot: {flightNumber} | Z: {from} -> Do: {to} | Wylot: {departureDate} | Przylot: {arrivalDate} | Cena: {price} zł");
+
+                    if (isInternational)
+                    {
+                        string passportNumber = data["PassportNumber"].ToString();
+                        bool isVisaRequired = Convert.ToBoolean(data["IsVisaRequired"]);
+                        Console.WriteLine($"Paszport: {passportNumber} | Wiza: {(isVisaRequired ? "Tak" : "Nie")}");
+                    }
+
+                    Console.WriteLine("----------------------------------------");
+                }
             }
 
             Console.WriteLine("\nNaciśnij Enter, aby wrócić do menu...");
