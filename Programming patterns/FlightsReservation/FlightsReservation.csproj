@@ -134,17 +134,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Classes\Builder\InternationalFlightReservationBuilder.cs" />
     <Compile Include="Classes\Builder\IReservationBuilder.cs" />
     <Compile Include="Classes\Builder\ReservationDirector.cs" />
+    <Compile Include="Classes\Builder\UserInput.cs" />
     <Compile Include="Classes\Factory\DomesticFlightReservationService.cs" />
     <Compile Include="Classes\Factory\InternationalFlightReservationService.cs" />
     <Compile Include="Classes\Factory\IReservationService.cs" />
     <Compile Include="Classes\Factory\ReservationFactory.cs" />
     <Compile Include="Classes\Auth\LoginManager.cs" />
-    <Compile Include="Classes\Models\DomesticFlightReservation.cs" />
     <Compile Include="Classes\Models\FlightReservation.cs" />
-    <Compile Include="Classes\Builder\FlightReservationBuilder.cs" />
-    <Compile Include="Classes\Models\InternationalFlightReservation.cs" />
+    <Compile Include="Classes\Builder\DomesticFlightReservationBuilder.cs" />
     <Compile Include="Classes\Models\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
