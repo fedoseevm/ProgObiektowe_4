@@ -1,7 +1,10 @@
+using FlightsReservation.Classes.Models;
+
 namespace ReservationSystem
 {
     public interface IReservationService
     {
-        void MakeReservation();
+        FlightReservation MakeReservation();
+        void getUserInput();
     }
 }
